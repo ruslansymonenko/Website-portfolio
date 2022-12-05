@@ -6,10 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My portfolio</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@400;600;700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="header-wrapper__name">
+          <a class="header-wrapper__name-link" href="">Ruslan Symonenko</a>
+        </div>
+        <nav class="header-wrapper__nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__list-item">
+              <a class="header-nav__list-link" href="#">
+                About
+              </a>
+            </li>
+            <li class="header-nav__list-item">
+              <a class="header-nav__list-link" href="#">
+                Skills
+              </a>
+            </li>
+            <li class="header-nav__list-item">
+              <a class="header-nav__list-link" href="#">
+                Portfolio
+              </a>
+            </li>
+            <li class="header-nav__list-item">
+              <a class="header-nav__list-link" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="main-screen">
+    <div class="main-screen-bg"></div>
+    <div class="container">
+      <div class="main-screen__presentation">
+        <h2 class="main-screen__presentation-name">
+          Hello, my name is Ruslan
+        </h2>
+        <h1 class="main-screen__presentation-job">
+          Web Developer
+        </h1>
+        <h2 class="main-screen__presentation-location">
+          From Ukraine
+        </h2>
+      </div>
+      <div class="main-screen__contact">
+        <div class="main-screen__contact-links">
+          <a href="" class="main-screen__contact-link">
+            <img src="./dist/images/icon-github.png" alt="github">
+          </a>
+          <a href="" class="main-screen__contact-link">
+            <img src="./dist/images/icon-linkedin.png" alt="linkedin">
+          </a>
+        </div>
+        <div class="main-screen__contact-btns">
+          <button class="main-screen__contact-btn">
+            <span>Download CV</span>
+            <img src="./dist/images/download.png" alt="download">
+          </button>
+          <button class="main-screen__contact-btn">
+            Contact me
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="./dist/js/main.min.js"></script>
 </body>

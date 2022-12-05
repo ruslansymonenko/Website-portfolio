@@ -1,3 +1,110 @@
-body{
-  
+@import 'vars';
+@import 'global';
+
+
+/*-----------------HEADER*/
+.header{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  height: 70px;
+  &-wrapper{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header-nav__list{
+  display: flex;
+  &-item{
+    margin-right: 30px;
+  }
+}
+
+
+/*---------------MAIN SCREEN*/
+
+.main-screen{
+  position: relative;
+  height: calc(100vh - 70px);
+  &__presentation{
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    padding-top: 140px;
+    max-width: 890px;
+  }
+  &__presentation-name{
+    font-size: 50px;
+    font-weight: 700;
+    color: $bg-white;
+    margin-bottom: 26px;
+  }
+  &__presentation-job{
+    font-size: 64px;
+    font-weight: 700;
+    color: $opposite-color;
+    margin-bottom: 26px;
+  }
+  &__presentation-location{
+    font-size: 50px;
+    font-weight: 700;
+    color: $bg-white;
+    margin-bottom: 74px;
+  }
+  &-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../dist/images/forest.jpg');
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(75%);
+    z-index: -1;
+  }
+  &__contact{
+    width: 621px;
+    height: 260px;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #f6fbf8c7;
+  }
+  &__contact-links{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__contact-links::after{
+    content: "";
+    width: 600px;
+    height: 4px;
+    background-color: $font-main;
+    position: absolute;
+    top: 130px;
+  }
+  &__contact-links img{
+    height: 64px;
+    width: 64px;
+    margin: 35px 50px;
+  }
+  &__contact-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  &__contact-btn{
+    display: flex;
+    width: 268px;
+    height: 80px;
+  }
+  &__contact-btn span {
+    display: block;
+  }
+  &__contact-btn img {
+    width: 44px;
+    height: 44px;
+  }
 }

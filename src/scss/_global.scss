@@ -1,0 +1,21 @@
+@import 'vars';
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif;*/ 
+
+body{
+  min-height: 100vh;
+  background-color: $bg-white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  color: $font-main;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+}

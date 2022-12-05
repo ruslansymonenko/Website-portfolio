@@ -6,7 +6,7 @@ const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync').create();
 
 function compilecss() {
-  return src('src/scss/*.scss')
+  return src('src/scss/*')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(prefix('last 10 versions'))
     .pipe(concat('style.min.css'))
