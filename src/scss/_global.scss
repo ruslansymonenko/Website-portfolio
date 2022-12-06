@@ -19,3 +19,21 @@ body{
   margin: 0 auto;
   z-index: 2;
 }
+
+.title{
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  &::after{
+    content: '';
+    height: 8px;
+    width: 314px;
+    background-color: $accent-color;
+    position: absolute;
+    bottom: -10px;
+    left: 37%;
+  }
+}
