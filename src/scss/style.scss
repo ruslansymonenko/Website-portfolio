@@ -18,8 +18,23 @@
 .header-nav__list{
   display: flex;
   &-item{
+    position: relative;
     margin-right: 30px;
   }
+  &-item::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color: $opposite-color;
+    bottom: 0;
+    left: 0;
+    transition: width 0.35s ease-out;
+  }
+}
+
+.header-nav__list-item:hover::after{
+  width: 100%;
 }
 
 
@@ -92,13 +107,22 @@
   &__contact-btns{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 10.5px;
     margin-top: 15px;
   }
   &__contact-btn{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 268px;
     height: 80px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    cursor: pointer;
   }
   &__contact-btn span {
     display: block;
@@ -106,5 +130,20 @@
   &__contact-btn img {
     width: 44px;
     height: 44px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+  }
+  &__download-btn{
+    background-color: $accent-color-dark;
+    transition: .3s ease;
+    &:hover{
+      background-color: $opposite-color;
+    }
+  }
+  &__modal-btn{
+    transition: .3s ease;
+    &:hover{
+      background-color: $accent-color-dark;
+    }
   }
 }
