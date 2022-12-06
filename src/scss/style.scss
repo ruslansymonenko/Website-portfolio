@@ -146,4 +146,18 @@
       background-color: $accent-color-dark;
     }
   }
+  &__arrow-btn{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border: none;
+    background-color: transparent;
+    bottom: 20px;
+    right: 50%;
+    cursor: pointer;
+    transition: .4s ease;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
 }
