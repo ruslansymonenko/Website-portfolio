@@ -122,6 +122,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 26px;
+    box-shadow: $shadow;
     cursor: pointer;
   }
   &__contact-btn span {
@@ -153,7 +154,7 @@
     border: none;
     background-color: transparent;
     bottom: 50px;
-    right: 50%;
+    right: 48%;
     cursor: pointer;
     transition: .4s ease;
     &:hover{
@@ -167,8 +168,18 @@
   background-color: $bg-white;
   padding: 125px 0 147px;
   z-index: 0;
+  &::after{
+    content: url('../../dist/images/forest-decor.svg');
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+  }
   &-title{
-    margin-bottom: 54px;
+    margin-bottom: 100px;
   }
   &-info{
     width: 100%;
@@ -191,7 +202,7 @@
     align-items: center;
     width: 514px;
     height: 657px;
-    box-shadow: -1px 2px 19px -4px rgba(0,0,0,0.52);
+    box-shadow: $shadow;
     background-color: #eaeeef;
       &::before{
       content: '';
@@ -207,18 +218,28 @@
       content: '';
       width: 514px;
       height: 657px;
-      top: 17px;
+      top: 23px;
       right: -24px;
       border: 3px solid $opposite-color;
       position: absolute;
       z-index: -2;
     }
   }
-  
   &__text{
     width: 514px;
     height: 657px;
-    border: 1px solid black
+  }
+}
+
+.about-info__text{
+  &-header{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  &-info{
+    margin-bottom: 50px;
   }
 }
 
