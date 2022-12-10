@@ -82,6 +82,7 @@
     width: 621px;
     height: 260px;
     padding: 5px;
+    margin-bottom: 40px;
     border-radius: 7px;
     background-color: #f6fbf8c7;
   }
@@ -169,14 +170,15 @@
   padding: 125px 0 147px;
   z-index: 0;
   &::after{
-    content: url('../../dist/images/forest-decor.svg');
+    content: "";
+    background-image: url('../../dist/images/forest-decor.svg');
     position: absolute;
-    display: block;
-    bottom: 0;
-    left: 0;
+    width: 100%;
+    height: 300px;
+    bottom: -10px;
     right: 0;
+    left: 0;
     z-index: -1;
-
   }
   &-title{
     margin-bottom: 100px;
@@ -241,5 +243,138 @@
   &-info{
     margin-bottom: 50px;
   }
+}
+
+/*-----------------------SKILLS*/
+
+.skills{
+  position: relative;
+  padding: 125px 0 147px;
+  background-color: #3fb2b4af;
+  &::before{
+    content: "";
+    background-image: url('../../dist/images/forest-decor.svg');
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: -15px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    background-color: #6d7370;
+    top: -9px;
+    left: 0;
+    right: 0;
+  }
+  &-title{
+    margin-bottom: 100px;
+    &::after{
+      background-color: #fff;
+    }
+  }
+  &-description{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 668px;
+  }
+}
+
+.skills-description{
+  &__programmer{
+    position: relative;
+    width: 553px;
+    height: 564px;
+    background-color: $bg-white;
+    border-radius: 5px;
+    &::before{
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 8px;
+      background-color: $opposite-color;
+      border-radius: 3px;
+    }
+  }
+  &__other{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 553px;
+    height: 564px;
+  }
+  &__other-graphic{
+    position: relative;
+    width: 480px;
+    height: 264px;
+    background-color: $bg-white;
+    &::before{
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 8px;
+      background-color: $opposite-color;
+      border-radius: 3px;
+    }
+  }
+  &__languages{
+    position: relative;
+    width: 480px;
+    height: 264px;
+    background-color: $bg-white;
+    &::before{
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 8px;
+      background-color: $opposite-color;
+      border-radius: 3px;
+    }
+  }
+}
+
+.programmer-skills__title{
+  margin: 15px 0 60px 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #6D7370;
+  font-family: 'Roboto', sans-serif;
+}
+
+.programmer-skills__list{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  margin: 20px;
+  font-weight: 400;
+  color: #6d7370;
+  &-item{
+    position: relative;
+    margin-left: 30px;
+    &::before{
+      content: '';
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: #6d7370;
+      left: -30px;
+      top: 8px;
+    }
+  }
+}
+
+.other-item{
+  margin-bottom: 10px;
+}
+
+.programming-item{
+  margin-bottom: 62px;
 }
 

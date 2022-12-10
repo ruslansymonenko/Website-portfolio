@@ -8,13 +8,14 @@ body{
   min-height: 100vh;
   background-color: $bg-white;
   font-family: 'Open Sans', sans-serif;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   font-style: normal;
   color: $font-main;
 }
 
 .container{
+  max-width: 1200px;
   width: 1200px;
   margin: 0 auto;
   z-index: 2;

@@ -6,3 +6,8 @@ $accent-color-dark: #3FB2B4;
 $opposite-color: #F09A6B;
 $shadow: -1px 2px 19px -4px rgba(0,0,0,0.52);
 
+
+%center{
+  display: flex;
+  align-items: center;
+}
